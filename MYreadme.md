@@ -14,7 +14,7 @@ SO THAT my company can compete with other e-commerce companies
 
 ## Walkthrough Video
 
-<!-- PUT LINK HERE -->
+<!-- PUT LINK HERE WHEN FINISHED-->
 
 ## Description
 
