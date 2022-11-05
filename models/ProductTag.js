@@ -1,6 +1,8 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require("sequelize");
 // DONE
-const sequelize = require('../config/connection');
+const sequelize = require("../config/connection");
+const Product = require("./Product");
+const Tag = require("./Tag");
 
 class ProductTag extends Model {}
 
@@ -15,15 +17,15 @@ ProductTag.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'product',
-        key: 'id',
+        model: Product,
+        key: "id",
       },
     },
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'tag',
-        key: 'id',
+        model: Tag,
+        key: "id",
       },
     },
   },
@@ -32,7 +34,7 @@ ProductTag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: "product_tag",
   }
 );
 
